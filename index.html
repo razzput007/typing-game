@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+    *{
+        margin:0px;
+        padding:0px;
+        font-family:"Roboto" ,sans-serif;
+    }
+    body{
+     background: linear-gradient(to bottom right,rgb(0, 119, 255),rgb(247, 0, 255));
+     background-repeat: no-repeat;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    h1{
+        color: white;
+        margin: 15px;
+    }
+    .container{
+      width: 100%;
+      max-width: 600px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+    }
+    .textinput{
+        z-index: -10;
+        position: absolute;
+        opacity: 0;
+    }
+    #pg1{
+      background-color: white;
+      color: rgb(148,148, 148);
+    }
+    #pg1::selection{
+        background-color: red;
+        color: black;
+    }
+    .container2{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: rgb(148,148, 148);
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .container2 button{
+        padding: 15px;
+        border-radius: 5px;
+        background-color: rgb(0, 162, 255);
+        font-weight: bold;
+        font-size: 20px;
+    }
+</style>
+<body>
+   <h1>Typing Game</h1> 
+   <div class="container">
+    <input type="text" class="textinput"/>
+    <div class="conatiner1">
+        <p id="pg1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis quia voluptatibus dolorum doloribus explicabo culpa, officia ut corrupti nam excepturi temporibus, ex impedit similique minima voluptatum inventore dolores nisi? Accusantium perferendis cupiditate necessitatibus expedita consequatur soluta autem quo quasi quidem obcaecati aut, veniam eos. Aliquid pariatur corporis nihil, neque repudiandae ut minus unde vel praesentium ex. Inventore totam facere illum magnam. Odit, similique qui iste, iusto asperiores, reiciendis deserunt incidunt esse saepe aliquid unde neque. Esse nobis non fugiat ducimus dignissimos maiores mollitia. Cum, suscipit qui distinctio porro architecto delectus? Exercitationem ipsum doloribus dolorem ullam possimus at voluptatem rem?
+        </p>
+        <div class="container2">
+            <div class="time">
+                <p>Time</p>
+                <span>60s</span>
+            </div>
+            <div class="wpm">
+                <p>wpm</p>
+                <span>0</span>
+            </div>
+            <div class="mistake">
+                <p>mistake</p>
+                <span>0</span>
+            </div>
+            <div class="cpm">
+                <p>cpm</p>
+                <span>0</span>
+            </div>
+            <div >
+                <button>start</button>
+            </div>
+
+        </div>
+        
+    </div>
+   </div>
+</body>
+</html>
